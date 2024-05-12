@@ -12,6 +12,8 @@ FN folder: Actual: decouple / measured: couple
 
 Usingsensor_decoupling_detection.zip: Decoupling Test Application
 
+The monitor and detector mode are implemented in the application
+
 If you want to use it, you need a server that has the activity recognition and decoupling detection algorithm.
 
 =================================================================
