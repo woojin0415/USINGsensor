@@ -1,0 +1,3 @@
+Decoupling test vidoes: This is a video recorded during a decoupling test. When the alarm sounds, it is recognized as a decouple state, and when the alarm stops, it is recognized as a couple state.
+Learning data: Data used when training machine-learning models. The data in columns A, B, and C are x-axis, y-axis, and z-axis acceleration data values, respectively. Each file is one input.
+Test data: Data used when testing machine-learning models. The data in columns C, D, and F are 30 x-, y-, and z-axis acceleration data values that are input into the machine-learning model input, respectively. If the file name includes g7, the data was collected using the Galaxy G7. If not, the data was collected using the Galaxy 21. There are 40 test inputs in each file.
