@@ -10,4 +10,10 @@ FN folder: Actual: decouple / measured: couple
 
 =================================================================
 
+Usingsensor_decoupling_detection.zip: Decoupling Test Application
+
+If you want use it, you need to server that has activity recognition and decoupling detection algorithm.
+
+=================================================================
+
 Test and train Data / Machine-learning models are at main branch
