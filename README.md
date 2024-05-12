@@ -4,10 +4,9 @@ TP folder: Actual: decouple / measured: decouple
 
 TN folder: Actual: couple / measured: couple
 
-FP folder: Actual: coupe / measure: decouple
+FP folder: Actual: coupe / measured: decouple
 
-
-FN folder: Actual: decouple / measure: couple
+FN folder: Actual: decouple / measured: couple
 
 =================================================================
 
