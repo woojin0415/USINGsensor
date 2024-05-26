@@ -263,6 +263,4 @@ for k in range(len(matrixs)):
             res_mat_ac.append(0)
 
 print(correct/720)
-#with open("ensemble_result_all_act.csv", 'w') as file:
-#    writer = csv.writer(file)
-#    writer.writerow(result_data)
+
