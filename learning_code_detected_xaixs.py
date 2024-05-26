@@ -1,6 +1,5 @@
 import os
 import csv
-import pre
 import pandas as pd
 import MLP
 import CNN
@@ -47,9 +46,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -71,9 +70,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -94,9 +93,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -117,9 +116,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -140,9 +139,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -163,9 +162,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -187,9 +186,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -211,9 +210,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -235,9 +234,9 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         if axis == 'x':
             train_input.append(x.tolist())
@@ -256,9 +255,6 @@ def learning(MLP_ch, CNN_ch, SVM_ch, axis):
         path = 'detected/x/default model/Y-axis models/'
     elif axis == 'z':
         path = 'detected/x/default model/Z-axis models/'
-
-    for datas in train_input:
-        pre.standardization(datas)
 
     if CNN_ch == 1:
         CNN.cnn(train_input, train_output, 15, 100, path + "cnn.h5", input_shape=30)
@@ -280,9 +276,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         DWT
         reg_x = DWT.dwt_denoise(x, iter)
@@ -309,9 +305,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -337,9 +333,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -365,9 +361,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -393,9 +389,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -421,9 +417,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -449,9 +445,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -477,9 +473,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -505,9 +501,9 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
-        pre.make_shape(y)
-        pre.make_shape(z)
+        
+        
+        
 
         reg_x = DWT.dwt_denoise(x, iter)
         reg_y = DWT.dwt_denoise(y, iter)
@@ -531,8 +527,6 @@ def learning_DWT(MLP_ch, CNN_ch, SVM_ch, iter, axis):
     elif axis == 'z':
         path = 'detected/x/DWT model/Z-axis models/'
 
-    for datas in train_input:
-        pre.standardization(datas)
 
     if CNN_ch == 1:
         CNN.cnn(train_input, train_output, 15, 100, path + "cnn.h5", input_shape=30)
@@ -554,11 +548,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -581,11 +575,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -607,11 +601,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -633,11 +627,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -659,11 +653,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -685,11 +679,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -712,11 +706,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -739,11 +733,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -766,11 +760,11 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
         if len(x) != 30:
             continue
 
-        pre.make_shape(x)
+        
         kalman.kamanfilter(x)
-        pre.make_shape(y)
+        
         kalman.kamanfilter(y)
-        pre.make_shape(z)
+        
         kalman.kamanfilter(z)
 
         if axis == 'x':
@@ -791,8 +785,6 @@ def learning_kalman(MLP_ch, CNN_ch, SVM_ch, axis):
     elif axis == 'z':
         path = 'detected/x/kalman model/Z-axis models/'
 
-    for datas in train_input:
-        pre.standardization(datas)
 
     if CNN_ch == 1:
         CNN.cnn(train_input, train_output, 15, 100, path + "cnn.h5", input_shape=30)
