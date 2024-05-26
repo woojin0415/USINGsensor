@@ -16,6 +16,10 @@ learning_code_detected _yaxis.py: machine-learing training code using data that 
 
 learning_code_detected _zaxis.py: machine-learing training code using data that is detected using z-axis accelerometer sensor value. --> This code is used to train machine-learning models and the models are in z_axis_data_base_models folder
 
+Note: each learning code file has tree functions: learning / learning_kalman / learning_DWT. learning function is training code with raw data. learning_kalman function is training code with kalman filter. learning_DWT function is training code with DWT.
+The first to third parameters determine whether to train MLP, 1D-CNN, or SVM. For example, if 1,0,0, only MLP is trained, if 1,1,0, MLP and 1D-CNN are trained, and if 1,1,1, MLP, 1D-CNN, and SVM are trained. The fourth parameter selects which data to use among x, y, and z axis data.
+
+
 
 test.py: performance evaluation code that shows the confusion matrix of emsemble's result. ( If you want to this code, you must edit the path of machine-learning model folder (z_axis_base_model)and test data folder
 
