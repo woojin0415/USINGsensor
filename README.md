@@ -19,7 +19,6 @@ If you want to use it, you need a server that has the activity recognition and d
 =================================================================
 
 Test and train Data / Machine-learning models are at main branch
-This test data is feature data extracted through a detector after collecting 300 pieces of data using an application dedicated to accelerometer data collection.
 
 ===================================================================
 
