@@ -19,3 +19,13 @@ If you want to use it, you need a server that has the activity recognition and d
 =================================================================
 
 Test and train Data / Machine-learning models are at main branch
+This test data is feature data extracted through a detector after collecting 300 pieces of data using an application dedicated to accelerometer data collection.
+
+===================================================================
+
+The code for server that is used to collect data and determine decoupling status is at django branch
+
+===================================================================
+
+In the ensemble branch, there is the test data, which is collected by using sensor application, training code for machine-learning models, and the performance evaluation code for the ensemble.
+The results of activity recognition in the paper use this test data.
