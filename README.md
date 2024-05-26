@@ -14,7 +14,7 @@ learning_code_detected _xaxis.py: machine-learing training code using data that 
 
 learning_code_detected _yaxis.py: machine-learing training code using data that is detected using y-axis accelerometer sensor value.
 
-learning_code_detected _zaxis.py: machine-learing training code using data that is detected using z-axis accelerometer sensor value. --> This code is used to train machine-learning models and the models are in main branch (z_axis_data_base_models)
+learning_code_detected _zaxis.py: machine-learing training code using data that is detected using z-axis accelerometer sensor value. --> This code is used to train machine-learning models and the models are in z_axis_data_base_models folder
 
 
 test.py: performance evaluation code that shows the confusion matrix of emsemble's result. ( If you want to this code, you must edit the path of machine-learning model folder (z_axis_base_model)and test data folder
