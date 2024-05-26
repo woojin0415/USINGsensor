@@ -1,6 +1,5 @@
 import os
 import csv
-import pre
 import pandas as pd
 import MLP
 import CNN
